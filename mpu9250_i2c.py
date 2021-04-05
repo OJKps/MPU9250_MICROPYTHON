@@ -13,7 +13,7 @@ sda: Pin(8)
 scl: (9)
 
 FROM SMBUS2 TO MICROPYTHON:
-i2c_write(i2c_addr, register, value, force=None)
+write_byte_data(i2c_addr, register, value, force=None)
 Write a byte to a given register.
 Parameters
 • i2c_addr (int) – i2c address
